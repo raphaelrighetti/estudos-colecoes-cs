@@ -310,3 +310,35 @@ Possui métodos de clonagem, métodos estáticos para ordenar um array na classe
 Um método de coleções que nos permite reduzir todos os itens para apenas um resultado, funcionando de forma similar ao reduce do JavaScript.
 
 Passamos uma lambda como parâmetro especificando qual é a operação utilizada para a redução.
+
+============VALOR DEFAULT EM PARÂMETROS============
+
+Podemos definir um valor padrão em parâmetros de métodos no C#, que será aplicado caso nenhum valor seja passada para aquele parâmetro.
+
+Para isso, basta utilizarmos a sintaxe:
+
+    void Metodo(int param=5) { }
+
+Dessa forma "param" teria o valor de "5", caso não fosse passado nenhum valor a ele.
+
+============INDEXADOR============
+
+Podemos tornar itens de uma classe nossa acessíveis por um índice, como se a classe fosse uma lista ou array.
+
+Para isso, utilizamos os indexadores:
+
+    public <tipo> this[int indice] => <lista interna>[indice];
+
+Dessa forma, estamos criando uma prop que é acessada pela própria referência do objeto, recebendo um índice dentro dos colchetes. Podemos manipular o retorno da forma que quisermos.
+
+============#region & #endregion============
+
+É uma maneira que temos de marcar uma região do nosso código para podermos fechá-la e sabermos do que se trata aquele bloco de código.
+
+============ArrayList============
+
+É uma classe que funciona de maneira similar à um array, mas que nos dá facilidades de adicionar itens, remover, pesquisar e etc.
+
+Não precisamos especificar um tipo e podemos adicionar itens de qualquer tipo à um ArrayList, como se fosse um array do JavaScript. (muito estranho)
+
+Sua utilização não é mais recomendada, mesmo quando precisamos de uma lista que armazena objetos de qualquer tipo. Se precisamos disso, podemos utilizar uma List<Object>.
