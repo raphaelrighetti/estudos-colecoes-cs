@@ -342,3 +342,44 @@ Dessa forma, estamos criando uma prop que é acessada pela própria referência 
 Não precisamos especificar um tipo e podemos adicionar itens de qualquer tipo à um ArrayList, como se fosse um array do JavaScript. (muito estranho)
 
 Sua utilização não é mais recomendada, mesmo quando precisamos de uma lista que armazena objetos de qualquer tipo. Se precisamos disso, podemos utilizar uma List<Object>.
+
+============GENERICS============
+
+Podemos utilizar generics em classes criadas por nós mesmos, basta definir o "<T>" na declaração da classe e usar o "T" nos método que temos nela.
+
+Também podemos ter métodos genéricos que utilizam o tipo do argumento para o retorno. Métodos genéricos podem aparecer tanto em classes genéricas quanto não genéricas.
+
+============AddRange(<lista>)============
+
+É um método que temos em List que podemos usar para adicionar todos elementos de uma outra lista ao final dela.
+
+============GetRange(<indice>, <quantidade>)============
+
+É um método de List que nos retorna outra lista a partir de um índice especificado, com o número de itens passado como segundo parâmetro.
+
+============COLEÇÕES============
+
+Temos várias coleções que implementam várias estruturas de dados no C#, como listas ordenadas, conjuntos, pilhas, filas, enfim.
+
+Referência de coleções no C#:
+
+https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/concepts/collections
+
+============CONSTRUÇÃO COM HERANÇA============
+
+Quando herdamos de uma classe e criamos um construtor, podemos acessar o construtor da classe herdada com a seguinte sintaxe:
+
+    public MinhaClasse(string prop) : base(prop)
+    {
+        \\resto da construção aqui...
+    }
+
+Dessa forma chamaremos o construtor da classe superior, mas ainda poderemos fazer mais coisas no construtor da nossa classe.
+
+============EXCEÇÕES PERSONALIZADAS============
+
+Podemos criar exceções personalizadas na nossa aplicação.
+
+Para isso, temos um atalho que consiste em escrever "Exception" e apertar "TAB" duas vezes. Assim temos o corpo de uma classe que herda de Exception prontinho e que podemos personalizar.
+
+Caso não usemos o atalho, basta criar construtores que chamem os contrutores de Exception, assim tornando possível dispararmos a nossa exceção.
