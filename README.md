@@ -27,3 +27,9 @@ Nesta aula aprendi um pouco mais sobre List e alguns métodos que eu ainda não 
 Também vi sobre outras coleções que já possuem implementação no C#, o que achei muito legal, pois existem coleções prontas para várias estruturas de dados conhecidas.
 
 Além disso, aprendi como criar uma exceção personalizada herdando de "Exception".
+
+### Aula 4
+
+#### Ordenando a lista
+
+Nesta aula aprendi sobre a interface "IComparable", que contém o método "CompareTo()", bem similar à interface "Comparable" do Java, que podemos utilizar para ter uma ordem natural de nossos objetos em uma lista. Bem interessante saber que também podemos fazer ordenação dessa forma, sem utilizar o LINQ.

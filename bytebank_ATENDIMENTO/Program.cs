@@ -53,17 +53,39 @@ Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
 //    Console.WriteLine(i);
 //}
 
+List<ContaCorrente> contas = new()
+{
+    new ContaCorrente(123),
+    new ContaCorrente(321),
+    new ContaCorrente(234),
+    new ContaCorrente(456)
+};
+
+foreach (var conta in contas)
+{
+    Console.WriteLine(conta.Numero_agencia);
+}
+
+contas.Sort();
+
+Console.WriteLine();
+
+foreach (var conta in contas)
+{
+    Console.WriteLine(conta.Numero_agencia);
+}
+
 #endregion
 
 #region Testando minha exceção
 
-try
-{
-    throw new ByteBankException("Deu pau.");
-}
-catch (ByteBankException ex)
-{
-    Console.WriteLine($"-> {ex.Message}");
-}
+//try
+//{
+//    throw new ByteBankException("Deu pau.");
+//}
+//catch (ByteBankException ex)
+//{
+//    Console.WriteLine($"-> {ex.Message}");
+//}
 
 #endregion

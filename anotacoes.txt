@@ -357,6 +357,20 @@ Também podemos ter métodos genéricos que utilizam o tipo do argumento para o 
 
 É um método de List que nos retorna outra lista a partir de um índice especificado, com o número de itens passado como segundo parâmetro.
 
+============Sort()============
+
+É o método que nos permite ordenar uma lista.
+
+Para usá-lo, o tipo do objeto que temos na lista deve ter implementado a interface "IComparable<tipo>" (o generics não é obrigatório, mas ajuda), que contém o método "CompareTo(<outro>)" e funciona de forma semelhante ao "compareTo()" do Java.
+
+O retorno é um número inteiro, de forma que se o número for menor que zero, o elemento usado na comparação vai estar antes do elemento comparado, se for zero os elementos estarão na mesma posição e permanecerá como está e se for maior que zero, o elemento utilizado na comparação estará à frente do elemento comparado. É a mesma coisa que no Java.
+
+Se não implementarmos a interface IComparable<> na nossa classe e tentarmos dar um Sort() em uma lista de objetos dessa classe, uma Exception será gerada em tempo de execução.
+
+Temos mais interfaces que nos ajudam a trabalhar com coleções em nossas classes, assim como criar nossas próprias coleções, podendo utilizar o polimorfismo com essas interfaces.
+
+De forma similar ao Java, temos a interface "IComparer", que funciona como a interface "Comparator" do Java. Nos dá a possibilidade de comparar dois objetos.
+
 ============COLEÇÕES============
 
 Temos várias coleções que implementam várias estruturas de dados no C#, como listas ordenadas, conjuntos, pilhas, filas, enfim.
