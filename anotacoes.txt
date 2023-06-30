@@ -397,3 +397,25 @@ Podemos criar exceções personalizadas na nossa aplicação.
 Para isso, temos um atalho que consiste em escrever "Exception" e apertar "TAB" duas vezes. Assim temos o corpo de uma classe que herda de Exception prontinho e que podemos personalizar.
 
 Caso não usemos o atalho, basta criar construtores que chamem os contrutores de Exception, assim tornando possível dispararmos a nossa exceção.
+
+============LINQ (Language Integrated Query)============
+
+É uma biblioteca do .NET, assim como uma linguagem de manipulação de dados, que nos permite fazer consultas em coleções de dados, assim como consultas em banco de dados, arquivos XML e etc.
+
+A maioria das coleções nos dá opção de utilizarmos métodos do LINQ invocando-os na própria referência da coleção, como o "Where()", "OrderBy()", "Select()" e etc, mas também podemos fazer as nossas consultas escrevendo as nossas próprias queries em linguagem LINQ.
+
+Exemplo:
+
+    var resultado = (from numero in numeros 
+                     where numero == 2 
+                     select numero).FirstOrDefault();
+
+Esse é um exemplo bem básico, podemos fazer consultas bem mais complexas seguindo essa sintaxe.
+
+Segue link para referência:
+
+https://learn.microsoft.com/pt-br/dotnet/csharp/linq/
+
+============Guid============
+
+Struct utilizada para representar e criar um GUID.

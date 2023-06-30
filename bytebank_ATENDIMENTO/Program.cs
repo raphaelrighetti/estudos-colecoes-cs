@@ -53,27 +53,35 @@ Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
 //    Console.WriteLine(i);
 //}
 
-List<ContaCorrente> contas = new()
-{
-    new ContaCorrente(123),
-    new ContaCorrente(321),
-    new ContaCorrente(234),
-    new ContaCorrente(456)
-};
+//List<ContaCorrente> contas = new()
+//{
+//    new ContaCorrente(123),
+//    new ContaCorrente(321),
+//    new ContaCorrente(234),
+//    new ContaCorrente(456)
+//};
 
-foreach (var conta in contas)
-{
-    Console.WriteLine(conta.Numero_agencia);
-}
+//foreach (var conta in contas)
+//{
+//    Console.WriteLine(conta.Numero_agencia);
+//}
 
-contas.Sort();
+//contas.Sort();
 
-Console.WriteLine();
+//Console.WriteLine();
 
-foreach (var conta in contas)
-{
-    Console.WriteLine(conta.Numero_agencia);
-}
+//foreach (var conta in contas)
+//{
+//    Console.WriteLine(conta.Numero_agencia);
+//}
+
+List<int> numeros = new() { 1, 2, 3, 4, 5 };
+
+var resultado = (from numero in numeros 
+                    where numero == 2 
+                    select numero).FirstOrDefault();
+
+Console.WriteLine(resultado);
 
 #endregion
 
